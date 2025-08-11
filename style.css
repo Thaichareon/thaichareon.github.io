@@ -1,0 +1,252 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body, h3, h4, h5, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+h1 {
+    margin: 0 30px;
+}
+
+body {
+    font-family:'Pontano Sans', sans-serif, monospace;
+    line-height: 1.6;
+    background-color: #2C2B2B;
+    color: #fff;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav {
+    margin: 0 15px;
+}
+
+nav ul {
+    list-style:none;
+    display: flex;
+    justify-content: right;
+}
+
+nav ul li {
+    margin: 0 15px;
+    text-align: center;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    /*background-color: #fff;*/
+}
+
+.rounded-box {
+    background-color: #222121;
+    padding: 5px 15px;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+.white-box {
+    background-color: #fff;
+    width: 100vw;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+}
+
+.white-box  * {
+    color: rgb(8, 4, 4);
+}
+
+.style-button {
+    background-color: #222121;
+    color: white;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: backgrould-color 0.3s ease;
+    margin: 12px 2px;
+    text-decoration: none;
+}
+
+.style-button:hover {
+    background-color: #1a1919;
+    transform: scale(1.05);
+}
+
+section.centered-body {
+    justify-content: center;
+    text-align: center;
+}
+
+section.column-section {
+    display: flex;
+    justify-content: center;
+}
+
+section.column-section p {
+    min-width: 400px;
+    text-align: left;
+}
+
+div.column {
+    margin: 0 30px;
+}
+
+div.aboutme-tag {
+    display: flex;
+    align-items: center;
+    padding: 3px 0px;
+}
+
+div.aboutme-tag img{
+    margin-right: 5px;
+}
+
+ul.tag-list {
+    list-style: none;
+    display: flex;
+}
+
+ul.tag-list li {
+    margin: 5px 4px;
+}
+
+section.school {
+    justify-content: center;
+    text-align: center;
+}
+
+div.school {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    align-items: center;
+}
+
+div.school * {
+    margin: 0px 15px;
+}
+
+img.school-img {
+    justify-content: right;
+}
+
+div.school-text {
+    justify-content: center;
+    text-align: left;
+}
+
+div.school-text {
+    width: 250px;
+}
+
+div.experience {
+    justify-content: left;
+    display: flex;
+    margin: 15px 0px;
+}
+
+.experience-time {
+   max-width: 70px;
+   text-align: left;
+}
+
+div.vertical-line {
+    width: 2px;
+    height: 50px;
+    background-color: black;
+    margin: 0px 20px;
+}
+
+div.experience-text * {
+   width: 700px;
+   text-align: left;
+}
+
+div.project {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 15px 0;
+    align-items: center;
+}
+
+div.project img, div.project div {
+    margin: 10px;
+}
+
+div.project-text {
+    justify-content: center;
+    text-align: left;
+    width: 500px;
+}
+
+.playable-grid {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    justify-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.playable {
+    margin: 0px 0px;
+    width: 200px;
+    
+    justify-items: center;
+}
+
+.playable * {
+    width: 200px;
+}
+
+.playable div {
+    background-color: aqua;
+    height: 100px;
+}
+
+.playable p {
+    color: white;
+    text-align: left;
+    padding-top: 3px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer h2, footer p {
+    margin-left: 50px;
+}
