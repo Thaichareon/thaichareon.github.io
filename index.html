@@ -9,37 +9,40 @@
     </head>
     <body>
         <header>
-            <h1>Ryan Thaichareon</h1></li>
+            <h1>Ryan Thaichareon</h1>
             <nav>
                 <ul>
                     <li><a href="#About">About</a></li>
                     <li><a href="#Education">Education</a></li>
                     <li><a href="#Experience">Experience</a></li>
                     <li><a href="#Projects">Projects</a></li>
-                    <li><a href="mailto:rythaichareon@gmail.com">Contact</a></li>
+                    <li><a href="mailto:rythaichareon@gmail.com"><button class="contact-button">Contact</button></a></li>
                 </ul>
             </nav>
         </header>
+        
+        <div id="particles-js"></div>
 
         <main>
             <section class="column-section" id="About" style="scroll-margin-top: 100px; padding: 100px 0px">
                 <div class="column">
-                    <h2>About Me</h2>
+                    <h2 style="color:#315fd2">About Me</h2>
                     <p>Contact:</p>
                     <p>rythaichareon@gmail.com</p>
                     <div style="margin: 10px 0px; justify-content: left">
-                        <div class="aboutme-tag"><img src="Images/location_on.png" style="width: 30px; height: 30px; object-fit: cover;">Located Pasadena, CA</div>
-                        <div class="aboutme-tag"><img src="Images/navigate_next.png" style="width: 30px; height: 30px; object-fit: cover;">Generalist Developer</div>
-                        <div class="aboutme-tag"><img src="Images/today.png" style="width: 30px; height: 30px; object-fit: cover;">Years Works Experience</div>
-                        <div class="aboutme-tag"><img src="Images/folder.png" style="width: 30px; height: 30px; object-fit: cover;">1 Published Project</div>
+                        <div class="aboutme-tag"><div class="location-img"></div>Located Pasadena, CA</div>
+                        <div class="aboutme-tag"><img src="Images/location_on.png" style="width: 20px; height: 20px; object-fit: contain;">Located Pasadena, CA</div>
+                        <div class="aboutme-tag"><img src="Images/navigate_next.png" style="width: 20px; height: 20px; object-fit: contain;">Generalist Developer</div>
+                        <div class="aboutme-tag"><img src="Images/today.png" style="width: 20px; height: 20px; object-fit: contain;">2+ Years Works Experience</div>
+                        <div class="aboutme-tag"><img src="Images/folder.png" style="width: 20px; height: 20px; object-fit: contain;">1 Published Project</div>
                     </div>
-                    <p>Game enthusiast with a passion for software engineering. I Specialize in systems and gameplay programming with a focus on clean and efficient code</p>
-                    <a href="mailto:rythaichareon@gmail.com"><button class="style-button">Contact</button></a>
+                    <p>Game enthusiast with a passion for software engineering. I specialize in systems and gameplay programming with a focus on clean and efficient code.</p>
+                    <a href="mailto:rythaichareon@gmail.com"><button class="contact-button">Contact</button></a>
                     <a href="#Projects"><button class="style-button">View Projects</button></a>
                 </div>
                 <div class="column">
                     <div>
-                        <h3 style="padding-top: 35px">Technical Skills</h3>
+                        <h3 style="padding-top: 100px">Technical Skills</h3>
                         <ul class="tag-list">
                             <li class="rounded-box">C++</li>
                             <li class="rounded-box">C#</li>
@@ -84,7 +87,7 @@
                     <h4>PCC</h4>
                     <h3>AS Computer Science</h3>
                     <h3>AS Natural Science</h3>
-                    <h5>DEAN"S HONORS</h5>
+                    <h5>DEAN'S HONORS</h5>
                     <h4>2021-2023</h4>
                 </div>
             </div>
@@ -97,7 +100,7 @@
                 <div class="experience-text">
                     <h3>CO LEAD ENGINEER</h5>
                     <h5>Potion Problems - Los Angeles, CA</h5>
-                    <p>Co-led team of engineers acting as a Gameplay and Network Engineer for a 2d project in Unreal. Participated in weekly lead stand ups, collaborated with various departments to implement Game Mechanics, UI, and Art. Worked alongside QA to prepare Builds and log bugs for weekly QA Tests.</p>
+                    <p>Co-led team of engineers acting as a Gameplay and Network Engineer for a 2D project in Unreal. Participated in weekly lead stand ups, collaborated with various departments to implement Game Mechanics, UI, and Art. Worked alongside QA to prepare builds and log bugs for weekly QA Tests.</p>
                 </div>
             </div>
             <div class="experience">
@@ -164,7 +167,7 @@
                 <img src="Images/PotionProblemsSteamLogo.jpg" style="width:397px;height:186px">
                 <div class="project-text">
                     <h3>Potion Problems</h3>
-                    <p>Multiplayer Party game Combining Social Deduction and Magic. Make Potions to say alve and beat the competition. Avoid being turned into a frog, and vote out troublemakers or frog all of your classmates.</p>
+                    <p>Multiplayer party game combining social deduction and magic. Make potions to say alive and beat the competition. Avoid being turned into a frog, and vote out troublemakers or frog all of your classmates.</p>
                     <a href="https://store.steampowered.com/app/3306050/Potion_Problems/">
                     <button class="style-button">Learn More</button></a>
                 </div>
@@ -186,5 +189,8 @@
             <h2>Contact</h2>
             <p>rythaichareon@gmail.com</p>
         </footer>
+        
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="app.js"></script>
     </body>
 </html>

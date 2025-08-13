@@ -2,7 +2,12 @@ html {
     scroll-behavior: smooth;
 }
 
-body, h3, h4, h5, p, ul {
+body,
+h3,
+h4,
+h5,
+p,
+ul {
     margin: 0;
     padding: 0;
 }
@@ -10,6 +15,11 @@ body, h3, h4, h5, p, ul {
 h2 {
     margin-bottom: 20px;
     padding: 0;
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.75em;
 }
 
 h1 {
@@ -17,36 +27,42 @@ h1 {
 }
 
 body {
-    font-family:'Pontano Sans', sans-serif, monospace;
+    font-family: 'Pontano Sans', sans-serif, monospace;
     line-height: 1.6;
     background-color: #2C2B2B;
     color: #fff;
+    z-index: 1;
 }
 
 header {
+    width: 100%;
     position: sticky;
     top: 0;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #222222;
     color: #fff;
     padding: 20px 0;
+    z-index: 3;
 }
 
 nav {
-    margin: 0 15px;
+    padding: 0 15px;
 }
 
 nav ul {
-    list-style:none;
+    list-style: none;
     display: flex;
     justify-content: right;
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: flex;
+    padding: 0 15px;
     text-align: center;
+    justify-items: center;
+    align-items: center;
 }
 
 nav ul li a {
@@ -59,6 +75,7 @@ main {
     max-width: 800px;
     margin: auto;
     /*background-color: #fff;*/
+    
 }
 
 .rounded-box {
@@ -75,12 +92,30 @@ main {
     text-align: center;
     justify-content: center;
     align-items: center;
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
-.white-box  * {
+.white-box * {
     color: rgb(8, 4, 4);
+}
+
+.contact-button {
+    background-color: #315fd2;
+    color: white;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: backgrould-color 0.3s ease;
+    margin: 12px 2px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.style-button:hover {
+    background-color: #1a3680;
+    transform: scale(1.05);
 }
 
 .style-button {
@@ -96,8 +131,13 @@ main {
 }
 
 .style-button:hover {
-    background-color: #1a1919;
+    background-color: #0d0e0e;
     transform: scale(1.05);
+}
+
+main, section {
+    z-index: 1;
+    position: relative;
 }
 
 section.centered-body {
@@ -106,17 +146,26 @@ section.centered-body {
 }
 
 section.column-section {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: 500px 500px;
+    justify-items: center;
     justify-content: center;
+    /*margin: 0px auto;*/
+    column-gap: 150px;
+    /*padding: 10px;*/
 }
 
 section.column-section p {
-    min-width: 400px;
     text-align: left;
+    justify-items: center;
+    justify-content: center;
 }
 
 div.column {
-    margin: 0 30px;
+    /*margin: 0 30px;*/
+    /*justify-items: center;*/
+    justify-content: center;
 }
 
 div.aboutme-tag {
@@ -125,8 +174,10 @@ div.aboutme-tag {
     padding: 3px 0px;
 }
 
-div.aboutme-tag img{
+div.aboutme-tag img {
     margin-right: 5px;
+    background-color: transparent;
+    mask-image: none;
 }
 
 ul.tag-list {
@@ -164,7 +215,7 @@ div.school-text {
 }
 
 div.school-text {
-    width: 250px;
+    width: 450px;
 }
 
 div.experience {
@@ -174,8 +225,8 @@ div.experience {
 }
 
 .experience-time {
-   max-width: 70px;
-   text-align: left;
+    max-width: 70px;
+    text-align: left;
 }
 
 div.vertical-line {
@@ -186,8 +237,8 @@ div.vertical-line {
 }
 
 div.experience-text * {
-   width: 700px;
-   text-align: left;
+    width: 700px;
+    text-align: left;
 }
 
 div.project {
@@ -197,7 +248,8 @@ div.project {
     align-items: center;
 }
 
-div.project img, div.project div {
+div.project img,
+div.project div {
     margin: 10px;
 }
 
@@ -220,7 +272,7 @@ div.project-text {
 .playable {
     margin: 0px 0px;
     width: 200px;
-    
+
     justify-items: center;
 }
 
@@ -240,13 +292,38 @@ div.project-text {
 }
 
 footer {
-    background-color: #333;
+    background-color: #222222;
     color: #fff;
     text-align: left;
     padding: 10px 0;
     margin-top: 20px;
+    position: relative;
+    z-index: 3;
 }
 
-footer h2, footer p {
+footer h2,
+footer p {
     margin-left: 50px;
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #181717;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 0;
+}
+
+#background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #181717;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 0;
 }
